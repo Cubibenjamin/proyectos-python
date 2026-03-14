@@ -97,4 +97,12 @@ class TypingApp:
 if __name__ == "__main__":
     root = tk.Tk()
     app = TypingApp(root)
+    def on_closing():
+        # Esto mata el proceso de raíz para que no quede colgado en VS Code
+        root.quit()
+        root.destroy()
+
+    root.protocol("WM_DELETE_WINDOW", on_closing)
+    # ------------------------------
+
     root.mainloop()
