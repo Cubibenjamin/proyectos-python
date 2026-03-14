@@ -1,0 +1,13 @@
+# Entornos virtuales (el más importante)
+venv/
+env/
+.env
+
+# Archivos temporales de Python
+__pycache__/
+*.pyc
+
+# Carpetas de VS Code y archivos del sistema
+.vscode/
+Thumbs.db
+.DS_Store
